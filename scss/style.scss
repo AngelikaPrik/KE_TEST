@@ -1,1 +1,62 @@
 @import "_nullstyle";
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-size:  15px;
+	color: #FAFAFA;
+	background-color: #111111;
+	line-height: 20px;
+	letter-spacing: -0.5px;
+}
+h1, h2 {
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 57px;
+	line-height: 73px;
+	letter-spacing: -1.75px;
+}
+h5 {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 17px;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+}
+.container {
+	max-width: 1127px;
+	margin: 0 auto;
+}
+
+.advantage-block {
+	display: flex;
+}
+.advatage-item {
+	background-color: #1C1C1C;
+	border-radius: 8px;
+	padding: 16px;
+	width: calc(100% / 4);
+	margin-right: 24px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.statistics-desc {
+	font-weight: 500;
+	font-size: 23px;
+	line-height: 32px;
+	letter-spacing: -0.5px;
+}
+.seller-block {
+	display: flex;
+	border: 1px solid #323131;
+}
+.seller-item {
+	padding: 21px 12px 12px;
+	border-right:1px solid #323131;
+	&:last-child {
+		border-right: none;
+	}
+	& p {
+		margin: 11px 0;
+	}
+}
