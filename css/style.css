@@ -100,7 +100,7 @@ h5 {
 }
 
 .container {
-  max-width: 1127px;
+  max-width: 1128px;
   margin: 0 auto;
 }
 
@@ -135,8 +135,37 @@ h5 {
   position: relative;
 }
 
+.advantage__item img {
+  position: absolute;
+  content: '';
+}
+
 .advantage__item:last-child {
   margin-right: 0;
+}
+
+#box {
+  top: 76px;
+  right: 56px;
+}
+
+#cam {
+  top: 66px;
+  left: 82px;
+}
+
+#diamond {
+  left: 72px;
+  top: 108px;
+}
+
+#car {
+  top: 68px;
+  right: 52px;
+}
+
+.advantage__desc {
+  margin-top: 210px;
 }
 
 /* advantage end */

@@ -45,7 +45,7 @@ h5 {
 	text-transform: uppercase;
 }
 .container {
-	max-width: 1127px;
+	max-width: 1128px;
 	margin: 0 auto;
 }
 
@@ -77,9 +77,32 @@ h5 {
 	width: calc(100% / 4);
 	margin-right: 24px;
 	position: relative;
+	& img {
+		position: absolute;
+		content: '';
+	}
 	&:last-child {
 		margin-right: 0;
 	}
+}
+#box {
+	top: 76px;
+	right: 56px;
+}
+#cam {
+	top: 66px;
+	left: 82px;
+}
+#diamond {
+	left: 72px;
+	top: 108px;
+}
+#car {
+	top: 68px;
+	right: 52px;
+}
+.advantage__desc {
+	margin-top: 210px;
 }
 
 /* advantage end */
