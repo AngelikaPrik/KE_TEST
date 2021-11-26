@@ -3,6 +3,7 @@
 // переменные
 $redColor: #DE2323;
 $grayColorText: #DBD9D9;
+$greenColor: #50CE61;
 $borderLine: 1px solid rgba($color: #ffffff, $alpha: 0.15);
 $mBottom: 120px;
 
@@ -44,22 +45,29 @@ h5 {
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
 }
-
 .container {
 	max-width: 1127px;
 	margin: 0 auto;
 }
+
+/* header start*/
+
 .header {
 	margin-bottom: $mBottom;
 }
 .header__logo {
 	margin: 28px 0;
 }
+/* header end */
+
+/* advantage start */
+
 .advantage {
 	margin-bottom: $mBottom;
 }
 .advantage__block {
 	display: flex;
+	margin-top: 70px;
 }
 .advantage__item {
 	background-color: #1C1C1C;
@@ -72,21 +80,101 @@ h5 {
 		margin-right: 0;
 	}
 }
+
+/* advantage end */
+
+/* statistics start */
+
 .statistics {
-	margin-bottom: $mBottom;
+	background-image: url(../img/statisctics/chart.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	& .container {
+		position: relative;
+	}
 }
 .statistics__desc {
 	@extend %title;
-	
+	margin-top: 45px;
 }
+.statistics__points {
+	display: flex;
+	margin-top: 160px;
+	margin-left: 20px;
+}
+.statistics__point {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 130%;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	margin-right: 100px;
+	& span {
+		color: $greenColor;
+	}
+}
+.percent__block {
+	background-color: $greenColor;
+	padding: 102px 42px;
+	border-radius: 50%;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 360px;
+	height: 360px;
+}
+.percent__num {
+	font-weight: 600;
+	font-size: 106px;
+	line-height: 130%;
+	letter-spacing: -0.04em;
+}
+.percent__desc {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 130%;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+}
+
+/* statistics end */
+
+/* seller start */
+
 .seller {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		background-image: url(../img/seller/hearts.png);
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-position-x: right;
+		right: 80px;
+		width: 100%;
+		height: 100%;
+	}
 	margin-bottom: $mBottom;
+	& h2 {
+		margin-top: 170px;
+	}
+}
+.seller__desc {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 42px;
+	letter-spacing: -1px;
+	margin: 32px 0;
 }
 .seller__block {
 	display: flex;
 	border: 1px solid #323131;
 	max-width: 840px;
 	margin: 35px 0;
+	position: relative;
 }
 .seller__item {
 	display: flex;
@@ -109,14 +197,22 @@ h5 {
 		color: #646363;
 	}
 }
+.btn__block {
+	display: inline-flex;
+}
 .btn {
 	padding: 16px 32px;
 	border-radius: 6px;
+	cursor: pointer !important;
 }
-
 .cta {
 	background-color: $redColor;
 }
+
+/* seller end */
+
+/* faq start */
+
 .faq {
 	margin-bottom: $mBottom;
 }
@@ -148,7 +244,6 @@ h5 {
 		transform: rotate(90deg);
 	}
 }
-
 .faq__title.active {
 	&::before {
 		transform: rotate(135deg);
@@ -158,7 +253,6 @@ h5 {
 		transform: rotate(-135deg);
 	}
 }
-
 .faq__text {
 	color: $grayColorText;
 	line-height: 24px;
@@ -167,6 +261,10 @@ h5 {
 	display: none;
 	margin-bottom: 24px;
 }
+
+/* faq end */
+
+/* footer start */
 
 footer {
 	border-top: $borderLine;	
@@ -201,7 +299,6 @@ footer {
 .footer__subtitle {
 	@extend %title;
 	text-align: center;
-	width: 50%;
 }
 .info {
 	display: block;
@@ -218,3 +315,5 @@ footer {
 	color: #ADACAC;
 	opacity: 0.5;
 }
+
+/* footer end */

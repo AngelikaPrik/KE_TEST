@@ -104,6 +104,7 @@ h5 {
   margin: 0 auto;
 }
 
+/* header start*/
 .header {
   margin-bottom: 120px;
 }
@@ -112,6 +113,8 @@ h5 {
   margin: 28px 0;
 }
 
+/* header end */
+/* advantage start */
 .advantage {
   margin-bottom: 120px;
 }
@@ -120,6 +123,7 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 70px;
 }
 
 .advantage__item {
@@ -134,12 +138,108 @@ h5 {
   margin-right: 0;
 }
 
+/* advantage end */
+/* statistics start */
 .statistics {
+  background-image: url(../img/statisctics/chart.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.statistics .container {
+  position: relative;
+}
+
+.statistics__desc {
+  margin-top: 45px;
+}
+
+.statistics__points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 160px;
+  margin-left: 20px;
+}
+
+.statistics__point {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-right: 100px;
+}
+
+.statistics__point span {
+  color: #50CE61;
+}
+
+.percent__block {
+  background-color: #50CE61;
+  padding: 102px 42px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 360px;
+  height: 360px;
+}
+
+.percent__num {
+  font-weight: 600;
+  font-size: 106px;
+  line-height: 130%;
+  letter-spacing: -0.04em;
+}
+
+.percent__desc {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+/* statistics end */
+/* seller start */
+.seller {
+  position: relative;
   margin-bottom: 120px;
 }
 
-.seller {
-  margin-bottom: 120px;
+.seller::before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/seller/hearts.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: right;
+  right: 80px;
+  width: 100%;
+  height: 100%;
+}
+
+.seller h2 {
+  margin-top: 170px;
+}
+
+.seller__desc {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -1px;
+  margin: 32px 0;
 }
 
 .seller__block {
@@ -149,6 +249,7 @@ h5 {
   border: 1px solid #323131;
   max-width: 840px;
   margin: 35px 0;
+  position: relative;
 }
 
 .seller__item {
@@ -185,15 +286,24 @@ h5 {
   color: #646363;
 }
 
+.btn__block {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 .btn {
   padding: 16px 32px;
   border-radius: 6px;
+  cursor: pointer !important;
 }
 
 .cta {
   background-color: #DE2323;
 }
 
+/* seller end */
+/* faq start */
 .faq {
   margin-bottom: 120px;
 }
@@ -245,6 +355,8 @@ h5 {
   margin-bottom: 24px;
 }
 
+/* faq end */
+/* footer start */
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding: 40px 0;
@@ -293,7 +405,6 @@ footer li:last-child {
 
 .footer__subtitle {
   text-align: center;
-  width: 50%;
 }
 
 .info {
@@ -317,3 +428,5 @@ footer li:last-child {
   color: #ADACAC;
   opacity: 0.5;
 }
+
+/* footer end */
