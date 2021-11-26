@@ -117,6 +117,7 @@ h5 {
 /* advantage start */
 .advantage h1 {
   margin-top: 120px;
+  max-width: 100%;
 }
 
 .advantage__block {
@@ -174,7 +175,7 @@ h5 {
   background-image: url(../img/statisctics/chart.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 0;
+  background-clip: border-box;
 }
 
 .statistics h2 {
@@ -279,7 +280,7 @@ h5 {
   display: flex;
   border: 1px solid #323131;
   max-width: 840px;
-  margin: 35px 0;
+  margin: 36px 0;
   position: relative;
 }
 
@@ -298,7 +299,7 @@ h5 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: calc(100% / 5);
-  padding: 21px 12px 12px;
+  padding: 20px 12px 12px;
   border-right: 1px solid #323131;
 }
 
@@ -449,13 +450,15 @@ footer li:last-child {
   transition-timing-function: ease-out;
 }
 
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
 }
 
 .product-links {
-  margin: 35px 0;
+  margin: 36px 0;
 }
 
 .product-links__item {
@@ -469,7 +472,7 @@ footer li:last-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 55px;
+  margin-bottom: 56px;
 }
 
 .footer__subtitle {
@@ -499,3 +502,48 @@ footer li:last-child {
 }
 
 /* footer end */
+/* @media for 960 */
+@media screen and (max-width: 960px) {
+  .container {
+    width: 896px;
+  }
+  .advantage__block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .advantage__item {
+    width: calc(97% / 2);
+    margin-right: 0;
+  }
+  .advantage__item:nth-child(1) {
+    margin: 0 24px 24px 0;
+  }
+  .advantage__item:nth-child(2) {
+    margin-bottom: 24px;
+  }
+  .advantage__item:nth-child(3) {
+    margin-right: 24px;
+  }
+  .advantage__desc {
+    margin-top: 100px;
+  }
+  #box {
+    top: 24px;
+    right: 24px;
+  }
+  #cam {
+    top: 24px;
+    left: 316px;
+  }
+  #diamond {
+    top: 24px;
+    left: 336px;
+  }
+  #car {
+    top: 0;
+    right: 0;
+  }
+}
