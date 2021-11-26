@@ -3,6 +3,16 @@
 // переменные
 $redColor: #DE2323;
 $grayColorText: #DBD9D9;
+$borderLine: 1px solid rgba($color: #ffffff, $alpha: 0.15);
+$mBottom: 120px;
+
+// шаблоны
+%title {
+	font-weight: 500;
+	font-size: 23px;
+	line-height: 32px;
+	letter-spacing: -0.5px;
+}
 
 body {
 	font-family: 'Inter', sans-serif;
@@ -12,6 +22,10 @@ body {
 	background-color: #111111;
 	line-height: 20px;
 	letter-spacing: -0.5px;
+
+	& a {
+		color: #FAFAFA;
+	}
 }
 
 h1,
@@ -35,12 +49,19 @@ h5 {
 	max-width: 1127px;
 	margin: 0 auto;
 }
-
+.header {
+	margin-bottom: $mBottom;
+}
+.header__logo {
+	margin: 28px 0;
+}
+.advantage {
+	margin-bottom: $mBottom;
+}
 .advantage__block {
 	display: flex;
 }
-
-.advatage__item {
+.advantage__item {
 	background-color: #1C1C1C;
 	border-radius: 8px;
 	padding: 16px;
@@ -51,32 +72,36 @@ h5 {
 		margin-right: 0;
 	}
 }
-
-.statistics__desc {
-	font-weight: 500;
-	font-size: 23px;
-	line-height: 32px;
-	letter-spacing: -0.5px;
+.statistics {
+	margin-bottom: $mBottom;
 }
-
+.statistics__desc {
+	@extend %title;
+	
+}
+.seller {
+	margin-bottom: $mBottom;
+}
 .seller__block {
 	display: flex;
 	border: 1px solid #323131;
 	max-width: 840px;
+	margin: 35px 0;
 }
-
 .seller__item {
+	display: flex;
+	flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-end;
+	width: calc(100% / 5);
 	padding: 21px 12px 12px;
 	border-right: 1px solid #323131;
-
 	&:last-child {
 		border-right: none;
 	}
-
 	& p {
-		margin: 11px 0;
+		margin: 12px 0;
 	}
-
 	& .seller__num {
 		font-size: 12px;
 		line-height: 17px;
@@ -84,9 +109,7 @@ h5 {
 		color: #646363;
 	}
 }
-
 .btn {
-	color: #FAFAFA;
 	padding: 16px 32px;
 	border-radius: 6px;
 }
@@ -94,25 +117,21 @@ h5 {
 .cta {
 	background-color: $redColor;
 }
-
-.wrapper {}
-
-.faq__block {}
-
+.faq {
+	margin-bottom: $mBottom;
+}
 .faq__item {
-	border-top: 1px solid rgba($color: #ffffff, $alpha: 0.15);
-	border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.15);
+	border-top: $borderLine;
+	border-bottom: $borderLine;
 	border-radius: 1px;
 }
 
 .faq__title {
-	font-weight: 500;
-	font-size: 23px;
-	line-height: 32px;
-	letter-spacing: -0.5px;
+	@extend %title;
 	margin: 24px 0;
 	position: relative;
 	cursor: pointer;
+
 	&::before,
 	&::after {
 		content: '';
@@ -124,22 +143,78 @@ h5 {
 		right: 0;
 		border-radius: 1px;
 	}
+
 	&::before {
 		transform: rotate(90deg);
 	}
 }
+
 .faq__title.active {
 	&::before {
 		transform: rotate(135deg);
 	}
+
 	&::after {
 		transform: rotate(-135deg);
 	}
 }
+
 .faq__text {
 	color: $grayColorText;
 	line-height: 24px;
 	letter-spacing: -0.5px;
 	opacity: 0.8;
 	display: none;
+	margin-bottom: 24px;
+}
+
+footer {
+	border-top: $borderLine;	
+	padding: 40px 0;
+	& ul {
+		display: flex;
+		justify-content: center;
+	}
+	& li {
+		list-style: none;
+		margin-right: 24px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+.footer__logo {
+	display: block;
+	text-align: center;
+}
+.product-links {
+	margin: 35px 0;
+}
+.product-links__item {
+	color: #FAFAFA;
+}
+.footer__subtitle-block {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 55px;
+}
+.footer__subtitle {
+	@extend %title;
+	text-align: center;
+	width: 50%;
+}
+.info {
+	display: block;
+	display: flex;
+	justify-content: space-between;
+	& a {
+		text-transform: uppercase;
+	}
+}
+.credits {
+	font-size: 12px;
+	line-height: 17px;
+	letter-spacing: -0.25px;
+	color: #ADACAC;
+	opacity: 0.5;
 }
