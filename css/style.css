@@ -124,6 +124,9 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 70px;
 }
 
@@ -131,8 +134,7 @@ h5 {
   background-color: #1C1C1C;
   border-radius: 8px;
   padding: 16px;
-  width: calc(100% / 4);
-  margin-right: 24px;
+  width: calc(100% / 4.3);
   position: relative;
 }
 
@@ -278,8 +280,6 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #323131;
-  max-width: 840px;
   margin: 36px 0;
   position: relative;
 }
@@ -298,13 +298,14 @@ h5 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: calc(100% / 5);
+  width: calc(100% / 6);
   padding: 20px 12px 12px;
-  border-right: 1px solid #323131;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-right: none;
 }
 
 .seller__item:last-child {
-  border-right: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .seller__item p {
@@ -502,72 +503,3 @@ footer li:last-child {
 }
 
 /* footer end */
-/* @media for 1280 */
-@media screen and (max-width: 1280px) {
-  /* .container {
-		padding: 0 70px;
-	} */
-}
-
-/* @media for 960 */
-@media screen and (max-width: 960px) {
-  h1,
-  h2 {
-    font-size: 50px;
-  }
-  .container {
-    width: 896px;
-  }
-  .advantage__block {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .advantage__item {
-    width: calc(97% / 2);
-    margin-right: 0;
-  }
-  .advantage__item:nth-child(1) {
-    margin: 0 24px 24px 0;
-  }
-  .advantage__item:nth-child(2) {
-    margin-bottom: 24px;
-  }
-  .advantage__item:nth-child(3) {
-    margin-right: 24px;
-  }
-  .advantage__desc {
-    margin-top: 100px;
-  }
-  #box {
-    top: 24px;
-    right: 24px;
-  }
-  #cam {
-    top: 24px;
-    left: 316px;
-  }
-  #diamond {
-    top: 24px;
-    left: 336px;
-  }
-  #car {
-    top: 0;
-    right: 0;
-  }
-  .seller__desc {
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 32px;
-    letter-spacing: -0.5px;
-  }
-}
-
-/* @media for 640 */
-@media screen and (max-width: 640px) {
-  .seller::before {
-    background-image: none;
-  }
-}
