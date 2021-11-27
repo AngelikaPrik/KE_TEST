@@ -502,8 +502,19 @@ footer li:last-child {
 }
 
 /* footer end */
+/* @media for 1280 */
+@media screen and (max-width: 1280px) {
+  /* .container {
+		padding: 0 70px;
+	} */
+}
+
 /* @media for 960 */
 @media screen and (max-width: 960px) {
+  h1,
+  h2 {
+    font-size: 50px;
+  }
   .container {
     width: 896px;
   }
@@ -545,5 +556,18 @@ footer li:last-child {
   #car {
     top: 0;
     right: 0;
+  }
+  .seller__desc {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+  }
+}
+
+/* @media for 640 */
+@media screen and (max-width: 640px) {
+  .seller::before {
+    background-image: none;
   }
 }
