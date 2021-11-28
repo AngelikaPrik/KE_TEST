@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	$('.faq__title').click(function (event) {
-		if ($('.block').hasClass('one')) {
+		if ($('.faq__block').hasClass('one')) {
 			$('.faq__title').not($(this)).removeClass('active');
 			$('.faq__text').not($(this).next()).slideUp(300);
 		}
