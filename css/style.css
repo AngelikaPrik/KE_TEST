@@ -305,8 +305,8 @@ h5 {
 
 #hearts {
   position: absolute;
-  right: -140px;
-  top: -10px;
+  right: -25px;
+  top: 0;
   z-index: 0;
 }
 
@@ -325,6 +325,7 @@ h5 {
   margin: 36px 0;
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 .seller__item {

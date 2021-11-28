@@ -233,20 +233,18 @@ h5 {
 
 .seller {
 	margin-top: 170px;
-
+	
 	& .container {
 		position: relative;
 		z-index: 1;
 	}
 }
-
 #hearts {
 	position: absolute;
-	right: -140px;
-	top: -10px;
+	right: -25px;
+	top: 0;
 	z-index: 0;
 }
-
 .seller__desc {
 	font-weight: 500;
 	font-size: 36px;
@@ -254,12 +252,12 @@ h5 {
 	letter-spacing: -1px;
 	margin: 32px 0;
 }
-
 .seller__block {
 	display: flex;
 	margin: 36px 0;
 	position: relative;
 	z-index: 2;
+	width: 100%;
 }
 
 .seller__item {
