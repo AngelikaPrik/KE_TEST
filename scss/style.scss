@@ -15,6 +15,14 @@ $mBottom: 120px;
 	letter-spacing: -0.5px;
 }
 
+%animationAdv {
+	animation-name: bounce;
+	animation-direction: alternate;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+
 body {
 	font-family: 'Inter', sans-serif;
 	font-size: 15px;
@@ -98,21 +106,49 @@ h5 {
 #box {
 	top: 76px;
 	right: 56px;
+	@extend %animationAdv;
+}
+
+@keyframes bounce {
+	10% {
+		margin-top: 5%;
+	}
+}
+
+@keyframes bounce {
+	100% {
+		margin-top: 15%;
+	}
 }
 
 #cam {
 	top: 66px;
 	left: 82px;
+	@extend %animationAdv;
+}
+
+@keyframes bounce {
+	10% {
+		margin-top: 5%;
+	}
+}
+
+@keyframes bounce {
+	100% {
+		margin-top: 15%;
+	}
 }
 
 #diamond {
 	left: 72px;
 	top: 108px;
+	@extend %animationAdv;
 }
 
 #car {
 	top: 68px;
 	right: 52px;
+	@extend %animationAdv;
 }
 
 .advantage__desc {
@@ -126,8 +162,8 @@ h5 {
 .statistics {
 	background-image: url(../img/statisctics/chart.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
-	background-clip: border-box;
+	background-size: cover;
+	background-position: center;
 
 	& h2 {
 		margin-top: 90px;
@@ -155,7 +191,7 @@ h5 {
 	line-height: 130%;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
-	margin-right: 100px;
+	width: calc(100% / 5);
 
 	& span {
 		color: $greenColor;
@@ -196,20 +232,19 @@ h5 {
 /* seller start */
 
 .seller {
-	position: relative;
 	margin-top: 170px;
 
-	&::before {
-		content: '';
-		position: absolute;
-		background-image: url(../img/seller/hearts.png);
-		background-repeat: no-repeat;
-		background-size: auto;
-		background-position-x: right;
-		right: 80px;
-		width: 100%;
-		height: 100%;
+	& .container {
+		position: relative;
+		z-index: 1;
 	}
+}
+
+#hearts {
+	position: absolute;
+	right: -140px;
+	top: -10px;
+	z-index: 0;
 }
 
 .seller__desc {
@@ -224,6 +259,7 @@ h5 {
 	display: flex;
 	margin: 36px 0;
 	position: relative;
+	z-index: 2;
 }
 
 .seller__item {
@@ -235,9 +271,11 @@ h5 {
 	padding: 20px 12px 12px;
 	border: $borderLine;
 	border-right: none;
+
 	&:last-child {
 		border-right: $borderLine;
 	}
+
 	& p {
 		margin: 12px 0;
 	}
@@ -409,6 +447,7 @@ footer {
 .info {
 	display: block;
 	display: flex;
+	flex-flow: wrap;
 	justify-content: space-between;
 
 	& a {
@@ -425,3 +464,11 @@ footer {
 }
 
 /* footer end */
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 960px) {}
+
+@media screen and (max-width: 640px) {}
+
+@media screen and (max-width: 320px) {}
