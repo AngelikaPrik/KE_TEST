@@ -499,8 +499,8 @@ footer {
 			position: absolute;
 			width: 382px;
 			height: 287px;
-			right: 0;
-			top: 5%;
+			left: 65%;
+			top: 10%;
 		}
 
 		.container::before {
@@ -523,7 +523,11 @@ footer {
 		}
 	}
 }
-
+@media screen and (min-width: 961px) and (max-width: 1160px) {
+	.seller::before {
+		left: 75%;
+	}
+}
 @media screen and (max-width: 960px) {
 	.container {
 		max-width: 896px;
@@ -564,7 +568,7 @@ footer {
 		background-position-x: 35%;
 	}
 	.seller::before {
-		right: -10%;
+		top: 2%;
 	}
 	.seller__item {
 		width: calc(100% / 6);
@@ -575,7 +579,9 @@ footer {
 		line-height: 32px;
 		letter-spacing: -0.5px;
 	}
-
+	.percent__block{
+		width: 40%;
+	}
 	.info {
 		flex-flow: row;
 		flex-direction: column;
@@ -596,7 +602,16 @@ footer {
 		}
 	}
 }
-
+@media screen and (max-width: 780px) {
+	.seller::before {
+		left: 70%;
+	}
+}
+@media screen and (min-width: 641px) and (max-width: 730px) {
+	.percent__num {
+		font-size: 65px;
+	}
+}
 @media screen and (max-width: 640px) {
 	.container {
 		max-width: 592px;
@@ -636,6 +651,9 @@ footer {
 		line-height: 130%;
 
 		letter-spacing: -0.02em;
+	}
+	.statistics__text {
+		width: 100%;
 	}
 	.seller {
 		margin-top: 50px;
@@ -742,7 +760,7 @@ footer {
 		margin-top: 40px;
 
 		&::before {
-			background-image: url(../img/statisctics/chart_320.svg);
+			background-image: url(../img/statisctics/chart_640.svg);
 			top: -10%;
 		}
 

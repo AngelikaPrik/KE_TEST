@@ -592,8 +592,8 @@ footer li:last-child {
     position: absolute;
     width: 382px;
     height: 287px;
-    right: 0;
-    top: 5%;
+    left: 65%;
+    top: 10%;
   }
   .seller .container::before {
     display: none;
@@ -613,6 +613,12 @@ footer li:last-child {
   }
   .advantage__item:nth-child(2) {
     margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1160px) {
+  .seller::before {
+    left: 75%;
   }
 }
 
@@ -651,7 +657,7 @@ footer li:last-child {
     background-position-x: 35%;
   }
   .seller::before {
-    right: -10%;
+    top: 2%;
   }
   .seller__item {
     width: calc(100% / 6);
@@ -660,6 +666,9 @@ footer li:last-child {
     font-size: 23px;
     line-height: 32px;
     letter-spacing: -0.5px;
+  }
+  .percent__block {
+    width: 40%;
   }
   .info {
     -webkit-box-orient: horizontal;
@@ -688,6 +697,18 @@ footer li:last-child {
         -ms-flex-order: 2;
             order: 2;
     margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .seller::before {
+    left: 70%;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 730px) {
+  .percent__num {
+    font-size: 65px;
   }
 }
 
@@ -731,6 +752,9 @@ footer li:last-child {
     font-size: 19.5px;
     line-height: 130%;
     letter-spacing: -0.02em;
+  }
+  .statistics__text {
+    width: 100%;
   }
   .seller {
     margin-top: 50px;
@@ -837,7 +861,7 @@ footer li:last-child {
     margin-top: 40px;
   }
   .statistics::before {
-    background-image: url(../img/statisctics/chart_320.svg);
+    background-image: url(../img/statisctics/chart_640.svg);
     top: -10%;
   }
   .statistics .statistics__desc {
