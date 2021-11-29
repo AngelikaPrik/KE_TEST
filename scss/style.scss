@@ -171,6 +171,8 @@ h5 {
 
 	.container {
 		position: relative;
+		display: flex;
+		justify-content: space-between;
 	}
 }
 
@@ -179,9 +181,11 @@ h5 {
 	margin-top: 45px;
 }
 
-
+.percent__image {
+	max-width: 100%;
+}
 .percent__block {
-	background-color: $greenColor;
+	/* background-color: $greenColor;
 	padding: 102px 42px;
 	border-radius: 50%;
 	display: inline-flex;
@@ -191,10 +195,10 @@ h5 {
 	right: 0;
 	top: 0;
 	width: 360px;
-	height: 360px;
+	height: 360px; */
 }
 
-.percent__num {
+/* .percent__num {
 	font-weight: 600;
 	font-size: 106px;
 	line-height: 130%;
@@ -207,7 +211,7 @@ h5 {
 	line-height: 130%;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
-}
+} */
 
 /* statistics end */
 
@@ -492,7 +496,7 @@ footer {
 	.statistics::before {
 		background-position-x: 35%;
 	}
-	.percent__block {
+	/* .percent__block {
 		width: 280px;
 		height: 280px;
 		justify-content: center;
@@ -500,7 +504,7 @@ footer {
 		.percent__num {
 			font-size: 83px;
 		}
-	}
+	} */
 	.seller__item {
 		width: calc(100% / 6);
 	}
@@ -553,13 +557,13 @@ footer {
 			// top: 10%;
 		}
 	}
-	.percent__block {
+	/* .percent__block {
 		position: static;
 		width: 502px;
 		height: 502px;
 		.percent__num {font-size: 124.5px;}
 		.percent__desc {font-size: 19.5px;}
-	}
+	} */
 	.seller {
 		margin-top: 50px;
 		.heading {
@@ -614,7 +618,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 639px) {
 	.container {
 		max-width: 288px;
 	}
@@ -650,12 +654,12 @@ footer {
 			line-height: 24px;
 		}
 	}
-	.percent__block {
+	/* .percent__block {
 		width: 320px;
 		height: 320px;
 		.percent__num {font-size: 88px;}
 		.percent__desc {font-size: 19.5px;}
-	}
+	} */
 	.seller__desc {
 		font-weight: 400;
 		font-size: 15px;
