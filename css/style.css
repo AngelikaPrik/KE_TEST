@@ -616,35 +616,13 @@ footer li:last-child {
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
   }
-  .box {
-    margin: 0;
-    top: 6%;
-    right: 7%;
-  }
-  .cam {
-    top: 6%;
-    left: 70%;
-  }
-  .diamond {
+  .advantage__image {
+    left: 80%;
     top: 5%;
-    left: 74%;
-  }
-  .car {
-    top: 5%;
-    right: 5%;
   }
   .statistics::before {
     background-position-x: 35%;
   }
-  /* .percent__block {
-		width: 280px;
-		height: 280px;
-		justify-content: center;
-		top: 5%;
-		.percent__num {
-			font-size: 83px;
-		}
-	} */
   .seller__item {
     width: calc(100% / 6);
   }
@@ -719,13 +697,6 @@ footer li:last-child {
   .statistics::before {
     background-image: url(../img/statisctics/chart_640.svg);
   }
-  /* .percent__block {
-		position: static;
-		width: 502px;
-		height: 502px;
-		.percent__num {font-size: 124.5px;}
-		.percent__desc {font-size: 19.5px;}
-	} */
   .seller {
     margin-top: 50px;
   }
