@@ -570,6 +570,14 @@ footer li:last-child {
   .statistics::before {
     background-position-x: 40%;
   }
+  .percent__num {
+    font-size: 83px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+  }
+  .percent__desc {
+    width: 80%;
+  }
   .seller {
     position: relative;
   }
@@ -623,6 +631,9 @@ footer li:last-child {
   .statistics::before {
     background-position-x: 35%;
   }
+  .seller::before {
+    right: -10%;
+  }
   .seller__item {
     width: calc(100% / 6);
   }
@@ -672,14 +683,6 @@ footer li:last-child {
   .advantage__item {
     height: 306px;
   }
-  .cam {
-    top: 6%;
-    left: 60%;
-  }
-  .diamond {
-    top: 5%;
-    left: 70%;
-  }
   .statistics .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -696,6 +699,19 @@ footer li:last-child {
   }
   .statistics::before {
     background-image: url(../img/statisctics/chart_640.svg);
+  }
+  .percent__block {
+    width: 90%;
+  }
+  .percent__num {
+    font-size: 124.5px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+  }
+  .percent__desc {
+    font-size: 19.5px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
   }
   .seller {
     margin-top: 50px;
@@ -793,6 +809,10 @@ footer li:last-child {
   }
   .advantage__block .advantage__item:nth-child(1) {
     margin-bottom: 16px;
+  }
+  .advantage__block .advantage__image {
+    left: 80%;
+    top: 7%;
   }
   .statistics {
     margin-top: 40px;

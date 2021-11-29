@@ -98,7 +98,7 @@ h5 {
 	& img {
 		position: absolute;
 		display: block;
-
+		
 		&:nth-child(1) {
 			-webkit-animation-duration: 1.2s;
 			animation-duration: 1.2s;
@@ -478,7 +478,14 @@ footer {
 	.statistics::before {
 		background-position-x: 40%;
 	}
-
+	.percent__num {
+		font-size: 83px;
+		line-height: 130%;
+		letter-spacing: -0.04em;
+	}
+	.percent__desc {
+		width: 80%;
+	}
 	.seller {
 		position: relative;
 
@@ -540,7 +547,9 @@ footer {
 	.statistics::before {
 		background-position-x: 35%;
 	}
-
+	.seller::before {
+		right: -10%;
+	}
 	.seller__item {
 		width: calc(100% / 6);
 	}
@@ -586,16 +595,6 @@ footer {
 		height: 306px;
 	}
 
-	.cam {
-		top: 6%;
-		left: 60%;
-	}
-
-	.diamond {
-		top: 5%;
-		left: 70%;
-	}
-
 	.statistics {
 		.container {
 			display: flex;
@@ -608,7 +607,19 @@ footer {
 			background-image: url(../img/statisctics/chart_640.svg);
 		}
 	}
-
+	.percent__block {
+		width: 90%;
+	}
+	.percent__num {
+		font-size: 124.5px;
+		line-height: 130%;
+		letter-spacing: -0.04em;
+	}
+	.percent__desc {
+		font-size: 19.5px;
+		line-height: 130%;
+		letter-spacing: -0.02em;
+	}
 	.seller {
 		margin-top: 50px;
 
@@ -705,8 +716,11 @@ footer {
 				margin-bottom: 16px;
 			}
 		}
+		.advantage__image {
+			left: 80%;
+			top: 7%;
+		}
 	}
-
 	.statistics {
 		margin-top: 40px;
 
