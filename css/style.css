@@ -363,13 +363,14 @@ h5 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 168px;
   padding: 20px 12px 12px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-right: none;
+  position: relative;
 }
 
 .seller__item:last-child {
@@ -379,6 +380,7 @@ h5 {
 .seller__item p {
   margin: 12px 0;
   max-width: 140px;
+  margin-bottom: 15px;
 }
 
 .seller__item .seller__num {
@@ -386,6 +388,12 @@ h5 {
   line-height: 17px;
   letter-spacing: -0.25px;
   color: #646363;
+}
+
+.seller__item .seller__num {
+  position: absolute;
+  bottom: 6%;
+  left: 6%;
 }
 
 .btn__block {
@@ -659,9 +667,10 @@ footer li:last-child {
   .seller::before {
     top: 2%;
   }
-  .seller__item {
-    width: calc(100% / 6);
-  }
+  /* 	.seller__item {
+		width: calc(100% / 6);
+	}
+ */
   .seller__desc {
     font-size: 23px;
     line-height: 32px;
@@ -868,6 +877,9 @@ footer li:last-child {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
+  }
+  .statistics .heading {
+    margin-top: 24px;
   }
   .statistics__text {
     width: 100%;
